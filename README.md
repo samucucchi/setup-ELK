@@ -18,7 +18,7 @@ Eseguire tutti i punti, prima con l'```initial_master_node```,
     ``` /usr/share/elasticsearch/bin/elasticsearch-create-enrollment-token -s kibana ```
 3. **NON - MASTER** da fare come secondo punto, poi continuare con i punti successivi
     ```
-    bin\elasticsearch --enrollment-token <enrollment-token> (node, no kibana)
+    (usr/share/elasticsearch/bin) elasticsearch-reconfigure-node --enrollment-token <enrollment-token> (node, no kibana)
     ```
 
 4. Modificare ``` /etc/elasticsearch/elasticsearch.yml ```, con: 
